@@ -10,141 +10,134 @@ import java.util.ResourceBundle;
 
 public class MainController implements Initializable {
 
-    @FXML private Label subjectNumLabel;
-    @FXML private Label qcaLabel;
+    @FXML
+    private Label subjectNumLabel;
+    @FXML
+    private Label qcaLabel;
     private int numSubjects;
     private double score;
 
-
-    @FXML
-    private void handleButtonAction(ActionEvent event) {
-        System.out.println("You clicked the button!");
-        numSubjects++;
-        subjectNumLabel.setText(Integer.toString(numSubjects));
-    }
     @FXML
     private void clRAction(ActionEvent event) {
-        System.out.println("You clicked the button!");
-        numSubjects=0;
-        score=0;
+
+        numSubjects = 0;
+        score = 0;
         subjectNumLabel.setText(Integer.toString(numSubjects));
         qcaLabel.setText(Double.toString(0));
     }
 
     @FXML
     private void scoreA1(ActionEvent event) {
-        System.out.println("You clicked the button!");
 
-        score+=4;
+        score += 4;
         numSubjects++;
         subjectNumLabel.setText(Integer.toString(numSubjects));
-        qcaLabel.setText(Double.toString(score/numSubjects*1.0));
+        qcaLabel.setText(Double.toString(score / numSubjects * 1.0));
     }
+
     @FXML
     private void scoreA2(ActionEvent event) {
-        System.out.println("You clicked the button!");
 
-        score+=3.6;
+        score += 3.6;
         numSubjects++;
         subjectNumLabel.setText(Integer.toString(numSubjects));
-        qcaLabel.setText(Double.toString(score/numSubjects*1.0));
+        qcaLabel.setText(Double.toString(score / numSubjects * 1.0));
     }
+
     @FXML
     private void scoreB1(ActionEvent event) {
-        System.out.println("You clicked the button!");
 
-        score+=3.2;
+        score += 3.2;
         numSubjects++;
         subjectNumLabel.setText(Integer.toString(numSubjects));
-        qcaLabel.setText(Double.toString(score/numSubjects*1.0));
+        qcaLabel.setText(Double.toString(score / numSubjects * 1.0));
     }
+
     @FXML
     private void scoreB2(ActionEvent event) {
-        System.out.println("You clicked the button!");
 
-        score+=3;
+        score += 3;
         numSubjects++;
         subjectNumLabel.setText(Integer.toString(numSubjects));
-        qcaLabel.setText(Double.toString(score/numSubjects*1.0));
+        qcaLabel.setText(Double.toString(score / numSubjects * 1.0));
     }
+
     @FXML
     private void scoreB3(ActionEvent event) {
-        System.out.println("You clicked the button!");
 
-        score+=2.8;
+        score += 2.8;
         numSubjects++;
         subjectNumLabel.setText(Integer.toString(numSubjects));
-        qcaLabel.setText(Double.toString(score/numSubjects*1.0));
+        qcaLabel.setText(Double.toString(score / numSubjects * 1.0));
     }
+
     @FXML
     private void scoreC1(ActionEvent event) {
-        System.out.println("You clicked the button!");
 
-        score+=2.6;
+        score += 2.6;
         numSubjects++;
         subjectNumLabel.setText(Integer.toString(numSubjects));
-        qcaLabel.setText(Double.toString(score/numSubjects*1.0));
+        qcaLabel.setText(Double.toString(score / numSubjects * 1.0));
     }
+
     @FXML
     private void scoreC2(ActionEvent event) {
-        System.out.println("You clicked the button!");
 
-        score+=2.4;
+        score += 2.4;
         numSubjects++;
         subjectNumLabel.setText(Integer.toString(numSubjects));
-        qcaLabel.setText(Double.toString(score/numSubjects*1.0));
+        qcaLabel.setText(Double.toString(score / numSubjects * 1.0));
     }
+
     @FXML
     private void scoreC3(ActionEvent event) {
-        System.out.println("You clicked the button!");
 
-        score+=2.0;
+        score += 2.0;
         numSubjects++;
         subjectNumLabel.setText(Integer.toString(numSubjects));
-        qcaLabel.setText(Double.toString(score/numSubjects*1.0));
+        qcaLabel.setText(Double.toString(score / numSubjects * 1.0));
     }
+
     @FXML
     private void scoreD1(ActionEvent event) {
-        System.out.println("You clicked the button!");
 
-        score+=1.6;
+        score += 1.6;
         numSubjects++;
         subjectNumLabel.setText(Integer.toString(numSubjects));
-        qcaLabel.setText(Double.toString(score/numSubjects*1.0));
+        qcaLabel.setText(Double.toString(score / numSubjects * 1.0));
     }
+
     @FXML
     private void scoreD2(ActionEvent event) {
-        System.out.println("You clicked the button!");
 
-        score+=1.2;
+        score += 1.2;
         numSubjects++;
         subjectNumLabel.setText(Integer.toString(numSubjects));
-        qcaLabel.setText(Double.toString(score/numSubjects*1.0));
+        qcaLabel.setText(Double.toString(score / numSubjects * 1.0));
     }
+
     @FXML
     private void scoreF(ActionEvent event) {
-        System.out.println("You clicked the button!");
 
-        score+=0;
+        score += 0;
         numSubjects++;
         subjectNumLabel.setText(Integer.toString(numSubjects));
-        qcaLabel.setText(Double.toString(score/numSubjects*1.0));
+        qcaLabel.setText(Double.toString(score / numSubjects * 1.0));
     }
+
     @FXML
     private void scoreNG(ActionEvent event) {
-        System.out.println("You clicked the button!");
 
-        score+=0;
+        score += 0;
         numSubjects++;
         subjectNumLabel.setText(Integer.toString(numSubjects));
-        qcaLabel.setText(Double.toString(score/numSubjects*1.0));
+        qcaLabel.setText(Double.toString(score / numSubjects * 1.0));
     }
-
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-        score=0;
-        numSubjects=0;
+        score = 0;
+        numSubjects = 0;
         subjectNumLabel.setText(Integer.toString(numSubjects));
         qcaLabel.setText(Double.toString(0));
     }
